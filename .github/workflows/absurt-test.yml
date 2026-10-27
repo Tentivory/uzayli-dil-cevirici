@@ -1,0 +1,15 @@
+name: Absürt Test
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Uzaylı Testi
+        run: |
+          echo "Uzaylılar test ediyor..."
+          python3 uzayli_cevirici.py << EOF
+merhaba
+çık
