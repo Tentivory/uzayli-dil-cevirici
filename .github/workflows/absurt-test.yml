@@ -10,6 +10,5 @@ jobs:
       - name: Uzaylı Testi
         run: |
           echo "Uzaylılar test ediyor..."
-          python3 uzayli_cevirici.py << EOF
-merhaba
-çık
+          echo -e "merhaba\nçık" | python3 uzayli_cevirici.py
+          echo "Test tamamlandı, uzaylılar memnun."
